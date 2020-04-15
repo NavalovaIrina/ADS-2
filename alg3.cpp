@@ -70,30 +70,3 @@ int countPairs3(int* arr, int len, int value)
 	return k;
 }
 
-	int main()
-	{
-		const int size = 12;
-		int arr[size] = { 0 };
-		srand(time(0));
-		for (int i = 0; i < size; i++)
-		{
-			arr[i] = rand() % 10;
-			std::cout << arr[i] << " ";
-		}
-		std::cout << std::endl;
-		std::cout << std::endl;
-		sort(arr, size);
-		for (int i = 0; i < size; i++)
-		{
-			std::cout << arr[i] << " ";
-		}
-		std::cout << std::endl;
-		std::cout << std::endl;
-		std::cout << countPairs1(arr, size, 10) << std::endl;
-		std::cout << std::endl;
-		std::cout << countPairs2(arr, size, 10) << std::endl;
-		std::cout << std::endl;
-	    std::cout << countPairs3(arr, size, 10) << std::endl;
-		return 0;
-
-	}
